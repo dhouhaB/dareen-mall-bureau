@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+
+      <img src="../../assets/logo.png" class = "peers_msg_img">
+
+
+
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content dir="rtl">
+  <div class="global1">
+
+
+
+<div class="divicon">
+  <ion-icon name="person-circle-outline"></ion-icon>
+</div>
+
+  <ion-item >
+
+    <ion-label  >  الإسم</ion-label>
+    <ion-input    [(ngModel)] ="userdata.name"  placeholder="ادخل الإسم" type="text"> </ion-input>
+
+  </ion-item>
+  <ion-item >
+  
+    <ion-label >العمر</ion-label>
+    <ion-input [(ngModel)] ="userdata.age" placeholder="العمر" type="number"> </ion-input>
+
+  </ion-item>
+
+  <ion-item >
+
+  
+    <ion-label >رقم هاتفك</ion-label>
+    <ion-input [(ngModel)] ="userdata.phone" placeholder="رقم الهاتف" type="tel"></ion-input>
+
+  </ion-item>
+
+  
+  <ion-item>
+
+    <ion-label >الجنس</ion-label>
+    <ion-select interface="popover" mode="ios" [(ngModel)] ="userdata.gender">
+      <ion-select-option  value="female">
+        انثى
+      </ion-select-option>
+      <ion-select-option  value="male">
+        ذكر
+         </ion-select-option>
+    </ion-select>
+
+  
+
+  </ion-item>
+
+
+  <ion-button  color="light" expand="block"  (click)="submit()"  shape="round" fill="outline">ارسل</ion-button>
+
+
+</div>
+
+</ion-content>

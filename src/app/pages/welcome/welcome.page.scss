@@ -1,0 +1,441 @@
+/*
+.wrap{
+ position: absolute;
+    left: 550px;
+    top: 30px;
+    width: 800px;
+   
+ /*   --ion-background-color:yellow;*/
+    /*text-align: center;
+    --ion-background-color:yellow;
+    height: 800px;
+    width:800px;
+   
+}
+
+*/
+/*
+
+
+
+
+   ion-content {
+
+    --ion-background-color: linear-gradient(#eacda3, #d6ae7b)
+   }
+   
+
+
+
+.partwrap
+{
+
+    height: 700px;
+    width: 500px;
+
+
+}
+*{
+  
+    font-family: 'cursive', 'Arial Narrow', Arial, sans-serif;
+
+}
+ion-title
+{
+    color:#3a7be0;
+    text-align: center;
+}
+.iontext1 {
+    position: absolute;
+    top:20%;
+left: 65%;
+    text-align: center;
+
+}
+.iontext01 {
+    position: absolute;
+    top:10%;
+    left: 65%;
+
+}
+.iontext2 {
+   position: absolute;
+    top:55%;
+    left: 58%;
+    text-align: center;
+
+    
+
+}
+
+
+
+.imgpart
+{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top:35%;
+    left: 65%;
+    --ion-background-color: transparent!important;
+}
+
+
+h2
+{
+    font-size: 32px;
+  
+}
+p{
+    color: black;
+    font-size: 32px;
+
+
+}
+ion-toolbar img
+{
+height: 55px;
+display: flex;
+justify-content: space-between;
+}
+
+.buttonpart
+{
+    position: absolute;
+    top:85%;
+    left: 63%;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.btn1
+{
+    margin-left: 80px;
+    width: 180px;
+    height: 50px;
+    flex:6
+ 
+
+
+ 
+}
+.btn2
+{
+
+   width: 180px;
+  height: 50px;
+  flex: 6;
+
+ 
+}
+
+
+
+
+#arabic
+{
+    text-align: center;
+    margin-right: 60px;
+    font-family:'initial';
+;
+}
+#english
+{
+    margin-right: 80px;
+    font-family:'initial';
+
+}
+
+
+.btn{
+    font-family:'initial';
+
+}
+
+
+
+
+ion-header
+{  --ion-background-color: linear-gradient(  #eacda3, #d6ae7b); 
+
+
+
+}
+/*********Responsive **************/
+@media (max-width:600px)  {
+
+
+  
+
+ 
+ .partwrap
+{
+    height: 100%;
+width:400px;
+position: absolute;
+right: 20%;
+margin-left: 0;
+
+
+}
+ p,h2{
+    font-size: 15px;
+ }
+
+ .imgpart
+ {
+    position: absolute;
+    top:25%;
+   
+     width: 250px;
+     height: 300px;
+
+   
+ }
+
+ 
+ .btn
+    {
+    
+       width: 45px;
+      height: 45px;
+      font-size: 10px;
+  
+    
+
+
+    }
+    .iontext2 {
+        position: absolute;
+         top:65%;
+         left: 50%;
+     
+    
+     
+     }
+
+
+
+     .iontext1 {
+        position: absolute;
+        top:20%;
+    left: 60%;
+        text-align: center;
+    
+    }
+ 
+    
+    
+    
+    .imgpart
+    {
+        width: 250px;
+        height: 600px;
+        position: absolute;
+        top:40%;
+        left: 40%;
+    }
+    
+
+
+    .buttonpart
+    {
+        position: absolute;
+        top:90%;
+        left: 50%;
+        display: flex;
+        justify-content:space-between;
+    }
+ #title1
+ {
+    width: 100%;
+ }
+
+#english
+{
+    width: 100%;
+}
+#arabic
+{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+}
+@media (min-width:1024px) and (max-width:2000px)  {
+
+    
+    .ion-content{
+        padding:0;
+         }
+         .partwrap
+        {
+            height: 100%;
+        width:90%;
+        position: absolute;
+        left: -15%;
+        margin-left: 0;
+        
+        
+        }
+/*
+        .buttonpart
+        {
+            position: absolute;
+            top:92%;
+            left: 60%;
+            display: flex;
+            justify-content:space-between;
+        }
+
+  */
+  
+}
+@media (min-width:900px) and (max-width:1024px)  {
+p,h2
+{
+    font-size: 25px;
+}
+    
+    .ion-content{
+        padding:0;
+         }
+         .partwrap
+        {
+            height: 100%;
+        width:90%;
+        position: absolute;
+        left: -15%;
+        margin-left: 0;
+        
+        
+        }
+        .buttonpart
+        {
+            position: absolute;
+            top:90%;
+            left: 50%;
+            display: flex;
+            justify-content:space-between;
+        }
+        .imgpart
+        {
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            top:35%;
+            left: 60%;
+        }
+   #english
+   {
+  
+    width: 100%;
+   }
+   .iontext2 {
+    position: absolute;
+     top:65%;
+     left: 58%;
+ text-align: center;
+     
+ 
+ }
+ 
+  
+  
+}
+@media (min-width:768px) and (max-width:900px)  {
+
+    
+    .ion-content{
+        padding:0;
+         }
+         .partwrap
+        {
+            height: 100%;
+        width:90%;
+        position: absolute;
+        left: -25%;
+        margin-left: 0;
+        
+        
+        }
+        h2,p {
+            font-size:25px;
+        };
+        .buttonpart
+        {
+            position: absolute;
+            top:90%;
+            left: 50%;
+            display: flex;
+            justify-content:space-between;
+        }
+   
+        .imgpart
+        {
+          
+            position: absolute;
+            top:40%;
+            left: 55%;
+        }
+        #english
+        {
+       
+         width: 100%;
+        }
+  
+}
+/*****************************/
+    @media (min-width:600px) and (max-width:768px)   {
+
+        p,h2
+        {
+            font-size: 20px;
+        }
+     
+             .partwrap
+            {
+                height: 100%;
+            width:90%;
+            position: absolute;
+           left: -20%;
+            margin-left: 0;
+            
+            
+            }
+            .imgpart
+{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top:35%;
+    left: 50%;
+}
+            .buttonpart
+{
+    position: absolute;
+    top:83%;
+    left: 50%;
+    display: flex;
+    justify-content:space-between;
+}
+            .logo ion-icon
+    {
+      position: absolute;
+    
+      top:50%;
+    right:10%;
+    
+    }
+}

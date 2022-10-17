@@ -1,0 +1,98 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+
+      <img src="../../assets/logo.png" class = "peers_msg_img">
+
+
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+
+
+    <ion-nav-title>
+      <div id = "title">YOUR TITLE</div>
+      
+     
+   </ion-nav-title>
+
+
+
+
+
+
+
+
+  </ion-header>
+  <div class="coverr" background-color: #c2d2f8;>
+
+
+
+<div class="logo">
+
+  <ion-icon color="light" name="person-circle-outline"></ion-icon>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ion-item style="margin-bottom: 30px ;width: 450px;">
+
+    <ion-label  style="padding-right: 100px; color:#ffffff;width: 450px;">User Name </ion-label>
+    <ion-input   [(ngModel)] ="userdata.name"  placeholder="enter your Name" type="text"> </ion-input>
+
+  </ion-item>
+  
+  <ion-item style="margin-bottom: 30px ;width: 450px;">
+  
+    <ion-label style="padding-right: 115px;color:#ffffff;width: 450px;">User Age </ion-label>
+    <ion-input [(ngModel)] ="userdata.age" placeholder="enter your age" type="number"> </ion-input>
+
+  </ion-item>
+  <ion-item style="margin-bottom: 30px ;width: 450px;">
+
+  
+    <ion-label  style="padding-right: 100px;width: 450px;color: #ffffff;">User Phone</ion-label>
+    <ion-input [(ngModel)] ="userdata.phone" placeholder="enter your phone number" type="tel"></ion-input>
+
+  </ion-item>
+
+  <ion-item class="try" style="margin-bottom: 30px ;width: 400px;">
+
+      <ion-label style="padding-right: 100px;color: #ffffff;">User Gender</ion-label>
+      <ion-select interface="popover" mode="ios" [(ngModel)] ="userdata.gender">
+        <ion-select-option  value="female">
+       Female
+        </ion-select-option>
+        <ion-select-option  value="male">
+          Male
+           </ion-select-option>
+      </ion-select>
+  
+    
+  
+    </ion-item>
+
+
+    <ion-button  color="light"   (click)="submit()"  shape="round" fill="outline">Submit</ion-button>
+  </div>
+  </div>
+</ion-content>

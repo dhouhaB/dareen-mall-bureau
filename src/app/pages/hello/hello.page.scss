@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+*{
+    font-family: 'Slabo ', serif;
+
+}
+
+.covercontent
+{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /*position: absolute;
+    left: 40%;
+    line-height: 60px;*/
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20x;
+    line-height: 50px;
+    
+
+;
+}
+
+
+h2,p{
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+
+}
+
+/*
+ion-header
+{  --ion-background-color: linear-gradient(  #eacda3, #d6ae7b); 
+
+
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+.imgpart
+{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+margin:0;
+  
+    --ion-background-color: transparent!important;
+}
+
+
+
+ion-title
+{
+    color:#ED7D3A;
+    text-align: center;
+}
+
+
+
+
+ion-content {
+
+    --ion-background-color: linear-gradient(#eacda3, #d6ae7b)
+   }
+
+
+
+  
+    @media (min-width:76px) and (max-width:379px)  {
+
+
+    .covercontent
+    {
+        
+   margin-top: 5px;
+        
+        
+        }
+        p{
+            font-size: 15px;
+        }
+        ion-button{
+            height: 20px;
+           
+        }
+
+
+
+   }
+
+
+
+
+
+@media (min-width:380px) and (max-width:600px)  {
+
+    
+    .covercontent
+    {
+        
+   margin-top: 5px;
+        
+        
+        }
+        p{
+            font-size: 20px;
+        }
+        ion-button{
+            height: 30px;
+           
+        }
+
+    }
+    
+    @media (min-width:768px) and (max-width:900px)  {
+
+        .covercontent
+    {
+        
+   margin-top: 5px;
+        
+        
+        }
+        p{
+            font-size: 30px;
+        }
+        .buttonPart
+        {
+            margin-top: 30px;
+        }
+      
+     
+    }
+    @media (min-width:900px) and (max-width:1024px)  {
+
+        .covercontent
+    {
+        
+   margin-top: 1px;
+        
+        
+        }
+        p{
+            font-size: 20px;
+        }
+        .designtext
+        {
+            margin-top: -40px;
+        }
+        .buttonPart
+        {
+            margin-top: -10px;
+        }
+      
+    }

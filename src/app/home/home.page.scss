@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+.global{
+   
+  
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top :10%;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+ion-content {
+
+  --ion-background-color: linear-gradient(#eacda3, #d6ae7b)
+ }
+
+ion-icon 
+{
+    width:300px;
+    height: 150px;
+    color:#ffffff;
+}
+
+.divicon
+{
+    margin-bottom: 30px;
+}
+ion-item{
+    width: 600px;
+    margin-bottom: 20px;
+    --ion-background-color:transparent!important;
+    color:#ffffff;
+}
+ion-title img
+{
+height: 40px;
+display: flex;
+justify-content: space-between;
+}
+
+ion-input
+{
+    margin-left: 0;
+}
+ion-label 
+{
+     margin-right: 80px;
+     width :80px;
+     color:#ffffff;
+}
+
+
+@media (min-width:76px)    and   (max-width:380px)
+{
+    .global{
+      
+        font-size: 5px;
+        position: absolute;
+   left: -20%;
+    top :5%;
+    }
+    
+        ion-label 
+{
+     margin-left: 80px;
+     width :100px
+}
+
+ion-item
+{
+    width: 420px;
+}
+ion-button{
+margin-left:50%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media   (min-width:390px) and  (max-width:600px)
+{
+
+
+    .global{
+      
+        font-size: 10px;
+        position: absolute;
+    left: 0%;
+    top :10%;
+    }
+    ion-button
+    {
+        margin-top: 20px;
+    }
+ 
+    #itemselect
+    {
+    width: 400px;;
+    }
+    ion-item
+{
+    width: 550px;
+}
+
+}
+@media (min-width:768px)    and   (max-width:1024px)
+{
+
+    .global{
+      
+        font-size: 20px;
+        position: absolute;
+        left: 10%;
+        top :3%;
+  
+    }
+    ion-item{
+   
+        margin-bottom: 30px;
+    }
+
+
+
+}

@@ -1,0 +1,269 @@
+
+
+#container a {
+  text-decoration: none;
+}
+
+.coverr
+{
+
+ padding-left: 700px;
+
+ 
+  height: 500px;
+  --ion-background-color: orange;
+ 
+}
+ion-item
+{
+
+ 
+  --ion-background-color:transparent!important;
+ color: #ffffff;
+ 
+  font-weight: 400;
+}
+ion-content {
+
+  --ion-background-color: linear-gradient(#eacda3, #d6ae7b)
+ }
+
+
+
+
+
+ion-title img
+{
+height: 40px;
+display: flex;
+justify-content: space-between;
+}
+
+
+.logo
+{
+  height:250px;
+  position: relative;
+}
+.logo ion-icon
+{
+  position: absolute;
+  font-size: 9em;
+  top:45%;
+  left:20%;
+  transform: translate(-50%,-50%);
+}
+
+ion-button {
+
+
+
+
+ position: fixed;
+  margin-top: 30px;
+
+
+}
+
+*{
+  font-size:20px;
+}
+
+
+
+
+
+@media(min-width:900px)and (max-width:1254)
+{
+
+
+
+  .coverr
+{
+
+ padding-left: 400px;
+
+ 
+  height: 600px;
+  --ion-background-color: orange;
+ 
+}
+
+
+
+}
+
+
+@media(min-width:900px) and (max-width:1025px) {
+  .coverr{
+    width: 300px;
+  padding-left: 60px;
+  font-size: 20px;
+  
+    }
+    ion-button {
+
+
+      position: absolute;
+    
+      left:0%;
+      margin-top: 10px;
+    
+    
+    }
+    *{
+      font-size: 15px;
+      font-weight: 300;
+    }
+    .up2{
+      margin-top: -70px;
+    }
+    
+  
+
+}
+
+
+
+
+
+@media (max-width:600px) and (min-width:76px){
+  *{
+    font-size:15px;
+    font-weight: 200;
+  }
+  
+.coverr{
+  width: 100%;/*300px*/
+padding-left: 0px;
+position: absolute;
+top:-2%;
+left:0%;
+
+
+  }
+ 
+
+/*
+  ion-input
+  {
+    padding-left: -10;
+    margin-left: -10;
+  }*/
+ion-label
+  {
+   margin-right: -60px;
+  }
+
+
+
+
+
+ion-select
+{
+  margin-right: -60px;}
+
+
+
+
+
+
+
+ion-button {
+
+
+  position: absolute;
+
+  left:65%;
+  margin-top: 10px;
+
+
+}
+ion-title img
+{
+height: 40px;
+margin-right: 0px;
+}
+.up2{
+  margin-top: -50px;
+}
+  
+}
+
+
+
+
+
+@media  (min-width:600px)  and (max-width:768px)
+{
+
+
+  *{
+    font-size:15px;
+    font-weight: 300;
+  }
+
+  .coverr{
+   
+
+  position: absolute;
+  top:2%;
+right:30%;
+  font-size: 10px;
+  
+    }
+    ion-button {
+
+
+      position: absolute;
+    
+      left:65%;
+      margin-top: 30px;
+    
+    
+    }
+  }
+  @media  (min-width:768px)  and (max-width:900px)
+{
+
+
+
+  *{
+    font-size:17px;
+  }
+  .coverr{
+   
+
+  position: absolute;
+  top:12%;
+  left:0%;
+  font-size: 15px;
+  
+    }
+    ion-button {
+
+
+      position: absolute;
+    
+      left:65%;
+      margin-top: 30px;
+    
+    
+    }
+    ion-title img
+{
+height: 40px;
+margin-right: 0px;
+}
+.logo ion-icon
+{
+  position: absolute;
+  font-size: 9em;
+  top:45%;
+  left:30%;
+  transform: translate(-50%,-50%);
+}
+
+  }
+  
+  
