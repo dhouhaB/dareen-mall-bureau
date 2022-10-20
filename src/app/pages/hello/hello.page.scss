@@ -7,7 +7,7 @@
 
 .covercontent
 {
-    margin-top: 70px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -24,12 +24,40 @@
 ;
 }
 
+ion-button
+{
+    width: 150px;
+    height: 50px;
+
+    
+}
+
+
+.part{
+    line-height: 30px !important;
+}
+.designtext
+{
+    line-height: 30px !important;
+
+}
+
+.buttonPart
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 130px;
+    
+
+}
 
 h2,p{
     font-size: 30px;
     font-family: 'Satisfy', cursive;
 
 }
+
 
 /*
 ion-header
@@ -100,7 +128,13 @@ ion-content {
 
    }
 
-
+   .buttonPart
+   {
+  
+       margin-top: 40px;
+       
+   
+   }
 
 
 
@@ -143,12 +177,12 @@ ion-content {
       
      
     }
-    @media (min-width:900px) and (max-width:1024px)  {
+    @media (min-width:900px) and (max-width:1025px)  {
 
         .covercontent
     {
         
-   margin-top: 1px;
+   margin-top: 10px;
         
         
         }
@@ -159,9 +193,6 @@ ion-content {
         {
             margin-top: -40px;
         }
-        .buttonPart
-        {
-            margin-top: -10px;
-        }
+      
       
     }

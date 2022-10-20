@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>
 
-      <img src="../../assets/logo.png" class = "peers_msg_img">
+      <img src="../../assets/logo.png" class = "peers_msg_img" href="">
 
 
 
@@ -12,54 +12,82 @@
 </ion-header>
 
 <ion-content dir="rtl">
-  <div class="global1">
+  <ion-button  color ="danger"  (click)="goHome()">عودة إلى الصفحة الرئيسية:</ion-button>
+
+  <div class="flex-center">
+
+<form [formGroup]="form1"> 
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="person-circle-outline"></ion-icon>
+     
+      </ion-card-header>
+    
+      <ion-card-content>
+    
+        <ion-item >
+
+          <ion-label  >  الإسم:</ion-label>
+        <ion-input    [(ngModel)] ="userdata.name"  placeholder="ادخل الإسم" type="phone" formControlName="name1"> </ion-input>
+     
+
+      
+        </ion-item>
+        <ion-label color="danger" *ngIf="form.get('name1').touched && !form.get('name1').valid" >ادخل الإسم</ion-label>
+
+        <ion-item >
+        
+          <ion-label >العمر:</ion-label>
+          <ion-input [(ngModel)] ="userdata.age" placeholder="العمر" type="number" formControlName="age1"> </ion-input>
+      
+        </ion-item>
+        <ion-label color="danger" *ngIf="form.get('age1').touched && !form.get('age1').valid" >ادخل العمر</ion-label>
+
+        <ion-item >
+      
+        
+          <ion-label > الهاتف:</ion-label>
+          <ion-input [(ngModel)] ="userdata.phone" placeholder="رقم الهاتف" type="tel" formControlName="phone1"></ion-input>
+      
+        </ion-item>
+        <ion-label color="danger" *ngIf="form.get('phone1').touched && !form.get('phone1').valid" >ادخل رقم الهاتف</ion-label>
+
+        
+        <ion-item>
+      
+          <ion-label >الجنس:</ion-label>
+          <ion-select interface="popover" mode="ios" [(ngModel)] ="userdata.gender" formControlName="gender1">
+            <ion-select-option  value="female">
+              انثى
+            </ion-select-option>
+            <ion-select-option  value="male">
+              ذكر
+               </ion-select-option>
+          </ion-select>
+      
+        
+      
+        </ion-item>
+      
+
+        <ion-label color="danger" *ngIf="form.get('gender').touched && !form.get('gender').valid" >ماهو جنسك</ion-label>
+
+
+      </ion-card-content>
+      <ion-button color="success" expand="block"  (click)="submit()"  shape="round"   [disabled]="!form1.get('name1').valid ||  !form1.get('age1').valid ||!form1.get('phone1').valid ||!form1.get('gender1').valid"  >ارسل</ion-button>
+
+    </ion-card>
 
 
 
-<div class="divicon">
-  <ion-icon name="person-circle-outline"></ion-icon>
-</div>
-
-  <ion-item >
-
-    <ion-label  >  الإسم</ion-label>
-    <ion-input    [(ngModel)] ="userdata.name"  placeholder="ادخل الإسم" type="text"> </ion-input>
-
-  </ion-item>
-  <ion-item >
-  
-    <ion-label >العمر</ion-label>
-    <ion-input [(ngModel)] ="userdata.age" placeholder="العمر" type="number"> </ion-input>
-
-  </ion-item>
-
-  <ion-item >
-
-  
-    <ion-label >رقم هاتفك</ion-label>
-    <ion-input [(ngModel)] ="userdata.phone" placeholder="رقم الهاتف" type="tel"></ion-input>
-
-  </ion-item>
-
-  
-  <ion-item>
-
-    <ion-label >الجنس</ion-label>
-    <ion-select interface="popover" mode="ios" [(ngModel)] ="userdata.gender">
-      <ion-select-option  value="female">
-        انثى
-      </ion-select-option>
-      <ion-select-option  value="male">
-        ذكر
-         </ion-select-option>
-    </ion-select>
-
-  
-
-  </ion-item>
 
 
-  <ion-button  color="light" expand="block"  (click)="submit()"  shape="round" fill="outline">ارسل</ion-button>
+
+
+</form>
+
+ 
+
 
 
 </div>

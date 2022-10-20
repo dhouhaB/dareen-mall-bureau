@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>
 
-      <img src="../../assets/logo.png" class = "peers_msg_img">
+ <img src="../../assets/logo.png" class = "peers_msg_img"   />
 
 
 
@@ -13,56 +13,80 @@
 
  
 <ion-content>
-  <div class="global">
+  <ion-button  color ="danger"  (click)="goHome()">Go  To the previous Page</ion-button>
 
 
-
-<div class="divicon">
-  <ion-icon name="person-circle-outline"></ion-icon>
-</div>
-
-
-
-  <ion-item >
-
-    <ion-label  >User Name: </ion-label>
-    <ion-input   [(ngModel)] ="userdata.name"  placeholder="enter your Name" type="text"> </ion-input>
-
-  </ion-item>
+<div class="flex-center">
   
-  <ion-item>
+  <form [formGroup]="form">
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="person-circle-outline"></ion-icon>
+      
+    </ion-card-header>
   
-    <ion-label >User Age: </ion-label>
-    <ion-input [(ngModel)] ="userdata.age" placeholder="enter your age" type="number"> </ion-input>
+    <ion-card-content>
 
-  </ion-item>
-  <ion-item >
 
-  
-    <ion-label  >User Phone:</ion-label>
-    <ion-input [(ngModel)] ="userdata.phone" placeholder="enter your phone number" type="tel"></ion-input>
+      <ion-item >
 
-  </ion-item>
-
-  <ion-item >
-
-      <ion-label >User Gender:</ion-label>
-      <ion-select interface="popover" mode="ios" [(ngModel)] ="userdata.gender">
-        <ion-select-option  value="female">
-       Female
-        </ion-select-option>
-        <ion-select-option  value="male">
-          Male
-           </ion-select-option>
-      </ion-select>
-  
+        <ion-label> Name: </ion-label>
+        <ion-input   [(ngModel)] ="userdata.name"  placeholder=" Name" type="text" formControlName="name"> </ion-input>
     
-  
-    </ion-item>
+      </ion-item>
+      <ion-label color="danger" *ngIf="form.get('name').touched && !form.get('name').valid" >Name missing</ion-label>
+
+      <ion-item>
+      
+        <ion-label > Age: </ion-label>
+        <ion-input [(ngModel)] ="userdata.age" placeholder="Age" type="number" formControlName="age"> </ion-input>
+    
+      </ion-item>
+      <ion-label color="danger" *ngIf="form.get('age').touched && !form.get('age').valid" >Name missing</ion-label>
+
+      <ion-item >
+    
+      
+        <ion-label > Phone:</ion-label>
+        <ion-input [(ngModel)] ="userdata.phone" placeholder="Phone " type="tel" formControlName="phone"></ion-input>
+    
+      </ion-item>
+      <ion-label color="danger" *ngIf="form.get('phone').touched && !form.get('phone').valid" >Phone Number Missing </ion-label>
+
+    
+      <ion-item >
+    
+          <ion-label> Gender:</ion-label>
+          <ion-select interface="popover" mode="ios" [(ngModel)] ="userdata.gender" formControlName="gender">
+            <ion-select-option  value="female">
+           Female
+            </ion-select-option>
+            <ion-select-option  value="male">
+              Male
+               </ion-select-option>
+          </ion-select>
+      
+        
+      
+        </ion-item>
+        <ion-label color="danger" *ngIf="form.get('gender').touched && !form.get('gender').valid" >Please Select Gender</ion-label>
+
+
+
+   <!--<ion-button  color="success" expand="block"   (click)="submit()"  shape="round"  [disabled]="!form.get('name').valid" >Submit</ion-button>-->
+
+
+   <ion-button class="submitbutton" color="success" expand="block"   (click)="submit()"  shape="round"    [disabled]="!form1.get('name1').valid ||  !form1.get('age1').valid ||!form1.get('phone1').valid ||!form1.get('gender1').valid"  >Submit</ion-button>
+
+
+
+  </ion-card-content>
+
+
+  </ion-card>
+</form>
 
  
-    <ion-button  color="light" expand="block"   (click)="submit()"  shape="round" fill="outline">Submit</ion-button>
-
 
   </div>
 
