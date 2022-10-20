@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>
 
-      <img src="../../assets/logo.png" class = "peers_msg_img" href="">
+      <img src="../../assets/logo.png" class = "peers_msg_img" >
 
 
 
@@ -16,8 +16,8 @@
 
   <div class="flex-center">
 
-<form [formGroup]="form1"> 
-    <ion-card>
+    <form [formGroup]="form1">
+          <ion-card>
       <ion-card-header>
         <ion-icon name="person-circle-outline"></ion-icon>
      
@@ -33,7 +33,7 @@
 
       
         </ion-item>
-        <ion-label color="danger" *ngIf="form.get('name1').touched && !form.get('name1').valid" >ادخل الإسم</ion-label>
+        <ion-label color="danger" *ngIf="form1.get('name1').touched && !form1.get('name1').valid" >ادخل الإسم</ion-label>
 
         <ion-item >
         
@@ -41,7 +41,7 @@
           <ion-input [(ngModel)] ="userdata.age" placeholder="العمر" type="number" formControlName="age1"> </ion-input>
       
         </ion-item>
-        <ion-label color="danger" *ngIf="form.get('age1').touched && !form.get('age1').valid" >ادخل العمر</ion-label>
+        <ion-label color="danger" *ngIf="form1.get('age1').touched && !form1.get('age1').valid" >ادخل العمر</ion-label>
 
         <ion-item >
       
@@ -50,7 +50,7 @@
           <ion-input [(ngModel)] ="userdata.phone" placeholder="رقم الهاتف" type="tel" formControlName="phone1"></ion-input>
       
         </ion-item>
-        <ion-label color="danger" *ngIf="form.get('phone1').touched && !form.get('phone1').valid" >ادخل رقم الهاتف</ion-label>
+        <ion-label color="danger" *ngIf="form1.get('phone1').touched && !form1.get('phone1').valid" >ادخل رقم الهاتف</ion-label>
 
         
         <ion-item>
@@ -70,11 +70,11 @@
         </ion-item>
       
 
-        <ion-label color="danger" *ngIf="form.get('gender').touched && !form.get('gender').valid" >ماهو جنسك</ion-label>
+        <ion-label color="danger" *ngIf="form1.get('gender').touched && !form1.get('gender').valid" >ماهو جنسك</ion-label>
 
+        <ion-button color="success" expand="block"  (click)="submit()"  shape="round"   [disabled]="!form1.get('name1').valid ||  !form1.get('age1').valid ||!form1.get('phone1').valid ||!form1.get('gender1').valid"  >ارسل</ion-button>
 
       </ion-card-content>
-      <ion-button color="success" expand="block"  (click)="submit()"  shape="round"   [disabled]="!form1.get('name1').valid ||  !form1.get('age1').valid ||!form1.get('phone1').valid ||!form1.get('gender1').valid"  >ارسل</ion-button>
 
     </ion-card>
 

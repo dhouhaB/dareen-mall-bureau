@@ -22,6 +22,7 @@ export class HomeAPage  {
     private navCtrl2:NavController,
 
     public ToastController:ToastController,
+    
     private formBuilder1:FormBuilder,
 
   ) {}
